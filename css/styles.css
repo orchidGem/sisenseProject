@@ -58,7 +58,7 @@ body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
   color: #212529;
   text-align: left;
@@ -315,7 +315,7 @@ h2, .h2 {
   font-size: 2rem; }
 
 h3, .h3 {
-  font-size: 1.75rem; }
+  font-size: 3rem; }
 
 h4, .h4 {
   font-size: 1.5rem; }
@@ -359,7 +359,7 @@ hr {
 small,
 .small {
   font-size: 80%;
-  font-weight: 400; }
+  font-weight: 300; }
 
 mark,
 .mark {
@@ -1965,7 +1965,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 
 .btn {
   display: inline-block;
-  font-weight: 400;
+  font-weight: 300;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -2401,7 +2401,7 @@ fieldset:disabled a.btn {
       box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5); }
 
 .btn-link {
-  font-weight: 400;
+  font-weight: 300;
   color: #ffcb05;
   background-color: transparent; }
   .btn-link:hover {
@@ -2588,7 +2588,7 @@ tbody.collapse.show {
   width: 100%;
   padding: 0.25rem 1.5rem;
   clear: both;
-  font-weight: 400;
+  font-weight: 300;
   color: #212529;
   text-align: inherit;
   white-space: nowrap;
@@ -2820,7 +2820,7 @@ tbody.collapse.show {
   padding: 0.375rem 0.75rem;
   margin-bottom: 0;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
   color: #495057;
   text-align: center;
@@ -4364,7 +4364,7 @@ button.close {
   margin: 0;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
   text-align: left;
   text-align: start;
@@ -4449,7 +4449,7 @@ button.close {
   max-width: 276px;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
   text-align: left;
   text-align: start;
@@ -6831,10 +6831,10 @@ button.bg-dark:focus {
   text-transform: capitalize !important; }
 
 .font-weight-light {
-  font-weight: 300 !important; }
+  font-weight: 200 !important; }
 
 .font-weight-normal {
-  font-weight: 400 !important; }
+  font-weight: 300 !important; }
 
 .font-weight-bold {
   font-weight: 700 !important; }
@@ -6960,6 +6960,22 @@ a.text-dark:hover, a.text-dark:focus {
 
 header .navbar {
   padding: 1.25rem 1.5rem; }
+  @media (min-width: 768px) {
+    header .navbar .navbar-expand-lg .navbar-nav .nav-link {
+      padding-right: 1rem;
+      padding-left: 1rem; } }
+
+@media (max-width: 767.98px) {
+  header .highlighted {
+    margin-top: 2rem;
+    margin-right: 1.5rem;
+    margin-bottom: 1rem; }
+    header .highlighted a {
+      text-align: center; } }
+
+@media (max-width: 767.98px) {
+  footer ul {
+    margin-top: 1rem; } }
 
 #firstsection {
   position: relative;
@@ -6992,7 +7008,7 @@ header .navbar {
         transform: rotate(90deg);
         position: absolute;
         right: -80px;
-        top: 0px; }
+        top: -30px; }
         #secondsection h2 span {
           margin-left: 2rem; } }
   @media (max-width: 767.98px) {
@@ -7001,6 +7017,9 @@ header .navbar {
 
 h1, h2 {
   text-transform: uppercase; }
+
+h2 {
+  color: #e5e5e5; }
 
 h3 {
   font-weight: 300; }

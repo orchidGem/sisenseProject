@@ -4,8 +4,14 @@
 @import "firstSection";
 @import "secondSection";
 
+$lightGray: #e5e5e5;
+
 h1, h2 {
   text-transform:uppercase;
+}
+
+h2 {
+  color: $lightGray
 }
 
 h3 {

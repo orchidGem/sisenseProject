@@ -1,5 +1,26 @@
 header {
   .navbar {
     padding: 1.25rem 1.5rem;
+
+    @include media-breakpoint-up(md) {
+      .navbar-expand-lg .navbar-nav .nav-link {
+          padding-right: 1rem;
+          padding-left: 1rem;
+        }
+    }
+
   }
+
+  .highlighted {
+    @include media-breakpoint-down(sm) {
+      margin-top: 2rem;
+      margin-right: 1.5rem;
+      margin-bottom: 1rem;
+
+      a {
+        text-align: center;
+      }
+    }
+  }
+
 }

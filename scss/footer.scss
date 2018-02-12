@@ -1,0 +1,7 @@
+footer {
+  @include media-breakpoint-down(sm) {
+    ul {
+      margin-top: 1rem;
+    }
+  }
+}
