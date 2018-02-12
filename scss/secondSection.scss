@@ -1,0 +1,39 @@
+$triangleWidth: 181px;
+
+#secondsection {
+  position: relative;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  &::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 100vw solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: $triangleWidth solid white;
+    position: absolute;
+    top: -$triangleWidth;
+    left: 0;
+  }
+
+  h2 {
+    @include media-breakpoint-up(md) {
+      transform: rotate(90deg);
+      position: absolute;
+      right: -80px;
+      top: 0px;
+      span {
+        margin-left: 2rem;
+      }
+    }
+
+    font-weight: bold;
+  }
+
+  img {
+    @include media-breakpoint-down(sm) {
+      margin-top: 1rem;
+    }
+  }
+}
