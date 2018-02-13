@@ -19,8 +19,8 @@
 
     (function fillerInfo() {
       $('#firstNameInput').val("Laura");
-      $('#lastNameInput').val("Evans");
-      $('#emailInput').val("laephoto@gmail.com");
+      $('#lastNameInput').val("Testing");
+      $('#emailInput').val("test@gmail.com");
       $('#timeFrameSelect').val("over 6 months");
     })
 

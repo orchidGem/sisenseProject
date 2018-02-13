@@ -1,7 +1,7 @@
 <?php
 include 'connection.php';
 
-$sql = "SELECT id, first_name, last_name, email, timeframe, createdDate FROM form_submissions";
+$sql = "SELECT first_name, last_name, email, timeframe, createdDate FROM form_submissions ORDER BY createdDate DESC";
 $result = $connection->query($sql);
 
 $connection->close();
@@ -22,7 +22,7 @@ $connection->close();
       <div class="row">
         <div class="col">
 
-          <h1>Submissions</h1>
+          <h1>Submissions: <span class="text-muted"><?php echo $result->num_rows; ?></span></h1>
 
           <?php
           if ($result->num_rows > 0) { ?>
@@ -30,7 +30,6 @@ $connection->close();
           <table class="table table-bordered table-hover">
             <thead class="bg-primary">
               <tr>
-                <th scope="col">#</th>
                 <th scope="col">First Name</th>
                 <th scope="col">Last Name</th>
                 <th scope="col">Email</th>
@@ -42,7 +41,6 @@ $connection->close();
               <?php
               while($row = $result->fetch_assoc()) { ?>
                 <tr>
-                  <th scope="row"><?php echo $row["id"]; ?></th>
                   <td><?php echo $row["first_name"]; ?></td>
                   <td><?php echo $row["last_name"]; ?></td>
                   <td><?php echo $row["email"]; ?></td>
