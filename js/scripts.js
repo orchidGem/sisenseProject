@@ -22,7 +22,7 @@
       $('#lastNameInput').val("Evans");
       $('#emailInput').val("laephoto@gmail.com");
       $('#timeFrameSelect').val("over 6 months");
-    })();
+    })
 
     function processFormSubmission() {
       var formData = {
@@ -75,7 +75,7 @@
       setTimeout(function(){
         $('form .alert').toggleClass("invisible");
         $('form .alert').toggleClass("alert-success");
-      }, 1000);
+      }, 3000);
     }
 
     // Clear validation on modal close

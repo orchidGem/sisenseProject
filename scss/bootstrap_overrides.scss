@@ -3,12 +3,13 @@ $yellow:  #ffcb05;
 $primary: $yellow;
 
 // fonts
+$font-size-base:              1.125rem; // Assumes the browser default, typically `16px`
 $font-family-sans-serif:     'Open Sans', sans-serif;
 $headings-font-family:       'Oswald', sans-serif;
-$font-size-base:             1rem; // Assumes the browser default, typically `16px`
-$h1-font-size:               $font-size-base * 3.5;
-$h3-font-size:               $font-size-base * 3;
+$h1-font-size:               $font-size-base * 4;
+$h3-font-size:               $font-size-base * 2.3;
 $headings-font-weight:       bold;
+$navbar-light-color:         rgba(#000, 1);
 
 $font-weight-light:          200;
 $font-weight-normal:         300;

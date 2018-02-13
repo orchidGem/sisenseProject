@@ -22,7 +22,7 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="#">Why Sisense <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
@@ -47,8 +47,9 @@
     </header>
 
     <!-- First Section -->
-    <div id="firstsection" class="container-fluid bg-secondary text-center text-white">
-
+    <div id="firstsection" class="container-fluid bg-dark text-center text-white">
+      <div id="radial-gradient"></div>
+      <div id="background"></div>
       <div class="row">
         <div class="col">
           <h1 class="mt-5 mb-4"><span class="text-warning">Agile BI</span> for everyone</h1>
@@ -57,15 +58,15 @@
 
       <div class="row justify-content-center">
         <div class="col-sm-2">
-          <img class="img-fluid" src="img/demo_icon_1.png" alt="Radical Innovation">
+          <img class="img-fluid" src="img/icon-radical.png" alt="Radical Innovation">
           <p>Radical<br><strong>Innovation</strong></p>
         </div>
         <div class="col-sm-2">
-          <img class="img-fluid" src="img/demo_icon_2.png" alt="Instant Impact">
+          <img class="img-fluid" src="img/icon-impact.png" alt="Instant Impact">
           <p>Instant<br><strong>Impact</strong></p>
         </div>
         <div class="col-sm-2">
-          <img class="img-fluid" src="img/demo_icon_3.png" alt="Obsessed with Customer Success">
+          <img class="img-fluid" src="img/icon-success.png" alt="Obsessed with Customer Success">
           <p>Obsessed with<br><strong>Customer Success</strong></p>
         </div>
       </div>
@@ -77,7 +78,7 @@
       </div>
 
       <div class="row mt-4 justify-content-center">
-        <div class="col-3">
+        <div class="col-sm-8 col-lg-3">
           <button type="button" name="button" class="btn btn-lg btn-block btn-primary mb-5">Watch Demo</button>
         </div>
       </div>
@@ -89,12 +90,15 @@
       <h2 class="display-4">What makes<br class="d-sm-none d-md-block"> <span>us different</span></h2>
       <div class="row justify-content-center">
         <div class="col-md-4">
-          <h3>Radically <strong>Innovative</strong> Technology</h3>
-          <p>If you want to outpace the competition, you'll need a partner that's as progressive as you are. From our core In-Chip&trade; technology to how we've built IoT, maching learning, and AI into our cutting edge BI platform, Sisense is leading innovation in the agile business intelligence market. Every innovation is designed to help business users easily and quickly get the answers they need from complex data.</p>
+          <h3 class="mb-4">Radically <strong>Innovative</strong> Technology</h3>
+          <p class="mb-4">If you want to outpace the competition, you'll need a partner that's as progressive as you are. From our core In-Chip&trade; technology to how we've built IoT, maching learning, and AI into our cutting edge BI platform, Sisense is leading innovation in the agile business intelligence market. Every innovation is designed to help business users easily and quickly get the answers they need from complex data.</p>
           <button type="button" name="button" class="btn btn-warning">Learn About Sisense Technology</button>
         </div>
-        <div class="col-md-5">
-          <img class="img-fluid" src="img/video.jpg" alt="">
+        <div id="video-thumb" class="col-md-5 align-self-center">
+          <button type="button" name="button" class="btn btn-link text-center">
+            <img id="icon-play-video" class="img-fluid" src="img/icon-play-btn.png" alt="">
+            <img class="img-fluid" src="img/video-thumb.jpg" alt="">
+          </button>
         </div>
       </div>
     </div><!-- /Second Section -->
@@ -109,7 +113,7 @@
           <div class="col-md-6">
             <ul class="nav justify-content-center justify-content-lg-end">
               <li class="nav-item">
-                <a class="nav-link active" href="#">Terms of Use</a>
+                <a class="nav-link" href="#">Terms of Use</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Sitemap</a>
